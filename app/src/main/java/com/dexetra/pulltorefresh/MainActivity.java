@@ -88,6 +88,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void stopLoading(View view) {
+        Log.d(MainActivity.class.getName(),"Stop Loading");
 		((CustomProgressBar) findViewById(R.id.pb)).stopLoading();
 		((PullToRefreshListView) findViewById(R.id.pullToRefreshListView))
 				.setRefreshDone();
