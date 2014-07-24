@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.dexetra.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.dexetra.pulltorefresh.CustomProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="stopLoading"
+        android:text="Stop" />
+
+</RelativeLayout>
